@@ -27,6 +27,6 @@ if __name__ == '__main__':
     assert gradle_exists or mvn_exists, 'there must be a `build.gradle` or a `pom.xml` in the root of the folder %s.' % folder_name
 
     if gradle_exists:
-        run('idea  %s/build.gradle' % folder_name)
+        run('idea %s/build.gradle' % folder_name)
     else:
-        run('xdg-open %s/pom.xml' % folder_name)
+        run('idea %s/pom.xml' % folder_name)
